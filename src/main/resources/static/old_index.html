@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Your first Spring application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p><a href="/hello">Greet the world!</a></p>
+
+<form action="/hello" method="GET" id="nameForm"> <!-- Hook up GetMethod "/hello" we defined in the app with the passed info being -->
+    <div> <!-- nameForm id up there is just for stying later. Doesn't actually do anything. -->
+        <label for="nameField">How should the app call you?</label> <!-- Hooks up the nameField text label to the input box -->
+        <input name="myName" id="nameField"> <!-- When method is triggered, it finds "myName" attribute which we have here and sends the value -->
+        <button>Greet me!</button> <!-- Calls the method when clicked. Acts as a default submit trigger sending the data -->
+    </div>
+</form>
+</body>
+</html>
